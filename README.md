@@ -8,3 +8,8 @@ Each line of the input file is parsed to extract the opcode and its operands. Th
 
 The code also handles comments within instructions and skips them during the parsing.
 
+There is also a C++ program that defines a class called "mipsAssembler" that can assemble certain instructions of the MIPS assembly language into binary instructions.
+
+The program includes four header files: iostream, string, unordered_map, and "mipsAssembler.h". The first three are standard C++ header files, and the last one is a header file that defines the class mipsAssembler and its member functions.
+
+The class mipsAssembler has a default constructor and another constructor that takes four arguments of type string. The class has several member functions, each of which corresponds to a different MIPS assembly instruction, and converts that instruction into its binary representation. The member function assemble() checks the first argument of the constructor to determine which member function to call. If the first argument is not recognized as a valid instruction, an error message is printed and the program exits.
